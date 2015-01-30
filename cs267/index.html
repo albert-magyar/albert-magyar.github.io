@@ -51,7 +51,8 @@
       </div>
       <div class="row">
 	<div class="col-sm-12">
-	  <p>I'm a first-year PhD student working in the ASPIRE Lab. 
+	  <p>
+	    I'm a first-year PhD student working in the ASPIRE Lab. 
 	    I work with the computer architecture research group, and I've had some involvement with the Chisel project.
 	    This project aims to increase the productivity of digital circuit designers by raising the abstraction level
 	    of RTL design using a metaprogramming-oriented HDL embedded in Scala.
@@ -60,7 +61,8 @@
 	    Although this generated simulator has been shown to be competitive with commercial implementations,
 	    limited work has been done on parallelizing its execution.
 	  </p>
-	  <p>I think an interesting application of parallel computing is the optimization of event-driven RTL simulators.
+	  <p>
+	    I think an interesting application of parallel computing is the optimization of event-driven RTL simulators.
 	    The current techniques for finding parallelization at the application level include <em>design-level parallelism</em>,
 	    where the HDL input is partitioned into event sequences capable in executing in parallel, and low-level data-parallel operations.
 	    One interesting aspect of this mode of simulation is that it is necessarily exact:
@@ -76,6 +78,12 @@
 	    Currently, several active research projects are exploring the use of GPUs in accelerating RTL simulation, 
 	    but the field does not seem to have been exhaustively mined, despited the massive resources of the EDA industry.
 	    A more thorough study of this problem might yield better results.
+	  </p>
+	  <p>
+	    The main challenge to scaling the application to large numbers of processors is the tight coupling of the different
+	    nodes of an RTL design graph. This application would certainly require efficient and effective methods for clustering the problem
+	    to obtain the maximum possible design-level parallelism, especially if strong scaling is desired for moderate-size designs.
+	  </p>
 	</div>
       </div>
       
