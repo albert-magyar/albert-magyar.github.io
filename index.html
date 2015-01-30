@@ -18,6 +18,12 @@
 
   <body>
 
+    <script type="text/javascript">
+      var shiftWindow = function() { scrollBy(0, -50) };
+      if (location.hash) shiftWindow();
+      window.addEventListener("hashchange", shiftWindow);
+    </script>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -41,7 +47,7 @@
 
     <div class="container">
 
-      <div class="anchor" id="about" class="special"></div>
+      <div class="anchor" id="about"></div>
       <div class="page-header">
         <h1>About Me</h1>
 	<p>I'm a first-year PhD student in the EECS department at UC Berkeley.
@@ -51,7 +57,7 @@
 	</p>
       </div>
 
-      <div class="anchor" id="research" class="special">
+      <div class="anchor" id="research">
       <div class="page-header">
         <h1>Research</h1>
 	<p>I am advised by <a href="http://www.eecs.berkeley.edu/~jrb">Prof.
